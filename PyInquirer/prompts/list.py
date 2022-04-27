@@ -75,7 +75,7 @@ class InquirerControl(FormattedTextControl):
             if isinstance(choice[0], Separator):
                 tokens.append(('class:separator', '  %s\n' % choice[0]))
             else:
-                tokens.append(('class:pointer' if selected else '', ' \u276f ' if selected
+                tokens.append(('class:pointer' if selected else '', ' > ' if selected
                 else '   '))
                 if selected:
                     tokens.append(('[SetCursorPosition]', ''))
